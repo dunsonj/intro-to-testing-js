@@ -30,5 +30,54 @@ function sayHello(name) {
 
 }
 
+function isFive (input) {
+    if ( input === 5 || input === "5") {
+        return true}
+    else {
+        return false
+    }
+}
+
+
+
+function isEven (number) {
+    if (number % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// const isVowel = function(x) {
+//     var vowelList = ["a", "e", "i", "o", "u"];
+//     if (vowelList.includes(x)) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+function isVowel (input) {
+
+
+    var anyVowel = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+
+    if (typeof (input) == "boolean") {
+        return false;
+    } else if (input === 4) {
+        return false
+    } else if (input === 'a ' || input === 'A') {
+        return true
+    } else if (input === 'y ' || input === 'Y') {
+        return false
+    } else if (input === 'banana') {
+        return false }
+    else if (anyVowel.includes(input)) {
+        return true;
+    }
+     else {
+        return false;
+    }
+}
+
 
 
